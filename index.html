@@ -7,7 +7,6 @@
   <title>Loyal Keeper Group | Campaign Hub</title>
 
   <style>
-
     body {
       margin: 0;
       font-family: Arial, sans-serif;
@@ -21,14 +20,11 @@
       width: 100%;
       padding: 22px 60px;
       box-sizing: border-box;
-
       display: flex;
       justify-content: space-between;
       align-items: center;
-
       background: rgba(245, 241, 235, 0.92);
       backdrop-filter: blur(12px);
-
       z-index: 999;
     }
 
@@ -53,19 +49,22 @@
 
     .hero {
       min-height: 100vh;
-
       display: flex;
       justify-content: center;
       align-items: center;
-
       text-align: center;
-
       padding: 140px 24px 80px;
       box-sizing: border-box;
     }
 
+    .container {
+      max-width: 1200px;
+      margin: auto;
+    }
+
     .hero-content {
       max-width: 900px;
+      margin: auto;
     }
 
     .eyebrow {
@@ -84,6 +83,17 @@
       letter-spacing: 1px;
     }
 
+    h2 {
+      font-size: 48px;
+      line-height: 1.1;
+      margin: 0 0 20px;
+    }
+
+    h3 {
+      font-size: 28px;
+      margin: 0 0 16px;
+    }
+
     p {
       font-size: 20px;
       line-height: 1.7;
@@ -98,16 +108,11 @@
 
     .button {
       display: inline-block;
-
       padding: 16px 36px;
-
       border-radius: 10px;
-
       text-decoration: none;
-
       font-size: 16px;
       font-weight: 700;
-
       transition: 0.3s;
     }
 
@@ -122,9 +127,7 @@
 
     .secondary-button {
       margin-left: 14px;
-
       border: 1px solid #8B1E2D;
-
       color: #8B1E2D;
       background: transparent;
     }
@@ -134,8 +137,85 @@
       color: white;
     }
 
-    @media (max-width: 768px) {
+    .section {
+      padding: 100px 60px;
+      box-sizing: border-box;
+    }
 
+    .section.white {
+      background: white;
+    }
+
+    .section-intro {
+      text-align: center;
+      margin-bottom: 64px;
+    }
+
+    .section-intro p {
+      font-size: 18px;
+      color: #555;
+    }
+
+    .card-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 28px;
+    }
+
+    .card {
+      background: #F8F6F2;
+      border-radius: 18px;
+      padding: 40px;
+      box-sizing: border-box;
+    }
+
+    .card p {
+      font-size: 16px;
+      color: #555;
+      margin: 0;
+    }
+
+    .dark-section {
+      background: #1E1E1E;
+      color: white;
+      text-align: center;
+    }
+
+    .dark-section p {
+      color: #E5E0D8;
+    }
+
+    .cta-section {
+      background: #8B1E2D;
+      color: white;
+      text-align: center;
+      padding: 100px 24px;
+    }
+
+    .cta-section p {
+      color: #F5F1EB;
+      margin-bottom: 40px;
+    }
+
+    .cta-button {
+      display: inline-block;
+      padding: 18px 42px;
+      background: white;
+      color: #8B1E2D;
+      text-decoration: none;
+      border-radius: 10px;
+      font-weight: 700;
+    }
+
+    footer {
+      text-align: center;
+      padding: 38px 24px;
+      color: #666;
+      font-size: 14px;
+      background: #F5F1EB;
+    }
+
+    @media (max-width: 768px) {
       header {
         padding: 20px 24px;
       }
@@ -152,25 +232,29 @@
         font-size: 42px;
       }
 
+      h2 {
+        font-size: 36px;
+      }
+
       p {
         font-size: 18px;
+      }
+
+      .section {
+        padding: 80px 24px;
       }
 
       .secondary-button {
         margin-left: 0;
         margin-top: 14px;
       }
-
     }
-
   </style>
-
 </head>
 
 <body>
 
   <header>
-
     <a href="index.html" class="logo">
       <img src="images/lkg-black-logo.png" alt="Loyal Keeper Group Logo">
     </a>
@@ -182,43 +266,91 @@
       <a href="#">Insights</a>
       <a href="mailto:info@loyalkeeper.com.au">Contact</a>
     </nav>
-
   </header>
 
   <section class="hero">
-
     <div class="hero-content">
+      <div class="eyebrow">Queensland Property Intelligence</div>
 
-      <div class="eyebrow">
-        Queensland Property Intelligence
-      </div>
-
-      <h1>
-        Strategic Real Estate Operations
-        for a Changing Market.
-      </h1>
+      <h1>Strategic Real Estate Operations for a Changing Market.</h1>
 
       <p>
-        Loyal Keeper Group connects property sales,
-        investment strategy, project opportunities,
-        and market intelligence across South East Queensland.
+        Loyal Keeper Group connects property sales, investment strategy,
+        project opportunities and market intelligence across South East Queensland.
       </p>
 
       <div class="button-row">
+        <a class="button primary-button" href="house-land.html">Explore Opportunities</a>
+        <a class="button secondary-button" href="#">View Market Insights</a>
+      </div>
+    </div>
+  </section>
 
-        <a class="button primary-button" href="house-land.html">
-          Explore Opportunities
-        </a>
-
-        <a class="button secondary-button" href="#">
-          View Market Insights
-        </a>
-
+  <section class="section white">
+    <div class="container">
+      <div class="section-intro">
+        <div class="eyebrow">Current Opportunities</div>
+        <h2>Featured Growth Corridors</h2>
+        <p>
+          Strategic investment opportunities across South East Queensland’s emerging residential corridors.
+        </p>
       </div>
 
-    </div>
+      <div class="card-grid">
+        <div class="card">
+          <h3>Logan Reserve</h3>
+          <p>
+            Strong population growth, expanding infrastructure and increasing investor demand
+            continue to drive attention across the corridor.
+          </p>
+        </div>
 
+        <div class="card">
+          <h3>Park Ridge</h3>
+          <p>
+            A rapidly evolving masterplanned region attracting both owner occupiers
+            and long-term investors.
+          </p>
+        </div>
+
+        <div class="card">
+          <h3>Ripley</h3>
+          <p>
+            Supported by large-scale development and future infrastructure planning
+            across the Ipswich growth region.
+          </p>
+        </div>
+      </div>
+    </div>
   </section>
+
+  <section class="section dark-section">
+    <div class="container">
+      <div class="eyebrow">Why Loyal Keeper Group</div>
+
+      <h2>More Than a Property Transaction.</h2>
+
+      <p>
+        We combine sales experience, investor thinking, development awareness and frontline market knowledge
+        to help clients make better property decisions.
+      </p>
+    </div>
+  </section>
+
+  <section class="cta-section">
+    <h2>Ready to Explore Current Opportunities?</h2>
+
+    <p>
+      Request current house and land availability, upcoming releases and strategic investment options
+      across South East Queensland.
+    </p>
+
+    <a class="cta-button" href="house-land.html">View House & Land Opportunities</a>
+  </section>
+
+  <footer>
+    © Loyal Keeper Group Pty Ltd
+  </footer>
 
 </body>
 </html>
