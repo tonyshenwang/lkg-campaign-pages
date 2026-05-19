@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Loyal Keeper Group</title>
+  <title>Loyal Keeper Group | Campaign Hub</title>
 
   <style>
     body {
@@ -13,56 +13,148 @@
       color: #1E1E1E;
     }
 
+    header {
+      position: fixed;
+      top: 0;
+      width: 100%;
+      padding: 24px 60px;
+      box-sizing: border-box;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background: rgba(245, 241, 235, 0.9);
+      backdrop-filter: blur(10px);
+    }
+
+    .logo {
+      font-weight: 700;
+      letter-spacing: 2px;
+      color: #8B1E2D;
+    }
+
+    nav a {
+      margin-left: 28px;
+      text-decoration: none;
+      color: #1E1E1E;
+      font-size: 14px;
+      font-weight: 600;
+    }
+
     .hero {
-      height: 100vh;
+      min-height: 100vh;
       display: flex;
       justify-content: center;
       align-items: center;
-      flex-direction: column;
       text-align: center;
-      padding: 20px;
+      padding: 120px 24px 60px;
+      box-sizing: border-box;
+    }
+
+    .hero-content {
+      max-width: 900px;
+    }
+
+    .eyebrow {
+      color: #8B1E2D;
+      font-size: 14px;
+      font-weight: 700;
+      letter-spacing: 3px;
+      text-transform: uppercase;
+      margin-bottom: 24px;
     }
 
     h1 {
-      font-size: 60px;
-      margin-bottom: 20px;
+      font-size: 64px;
+      line-height: 1.05;
+      margin: 0 0 28px;
       letter-spacing: 2px;
     }
 
     p {
       font-size: 20px;
-      max-width: 700px;
+      max-width: 720px;
+      margin: 0 auto;
       line-height: 1.6;
+      color: #333333;
+    }
+
+    .button-row {
+      margin-top: 42px;
     }
 
     .button {
-      margin-top: 40px;
-      padding: 14px 32px;
+      display: inline-block;
+      padding: 15px 34px;
       background: #8B1E2D;
       color: white;
       text-decoration: none;
       border-radius: 8px;
       font-size: 16px;
+      font-weight: 700;
     }
 
-    .button:hover {
-      opacity: 0.9;
+    .button.secondary {
+      margin-left: 14px;
+      background: transparent;
+      color: #8B1E2D;
+      border: 1px solid #8B1E2D;
+    }
+
+    @media (max-width: 768px) {
+      header {
+        padding: 20px 24px;
+      }
+
+      nav {
+        display: none;
+      }
+
+      h1 {
+        font-size: 42px;
+      }
+
+      p {
+        font-size: 18px;
+      }
+
+      .button.secondary {
+        margin-left: 0;
+        margin-top: 14px;
+      }
     }
   </style>
 </head>
 
 <body>
 
+  <header>
+    <div class="logo">LOYAL KEEPER GROUP</div>
+
+    <nav>
+      <a href="#">Home</a>
+      <a href="#">Projects</a>
+      <a href="#">Investment</a>
+      <a href="#">Insights</a>
+      <a href="#">Contact</a>
+    </nav>
+  </header>
+
   <section class="hero">
-    <h1>LOYAL KEEPER GROUP</h1>
+    <div class="hero-content">
+      <div class="eyebrow">Queensland Property Intelligence</div>
 
-    <p>
-      Strategic Real Estate Operations across South East Queensland.
-    </p>
+      <h1>Strategic Real Estate Operations for a Changing Market.</h1>
 
-    <a class="button" href="#">
-      Explore Projects
-    </a>
+      <p>
+        Loyal Keeper Group connects property sales, investment strategy, project opportunities
+        and market intelligence across South East Queensland.
+      </p>
+
+      <div class="button-row">
+        <a class="button" href="#">Explore Opportunities</a>
+        <a class="button secondary" href="#">View Market Insights</a>
+      </div>
+    </div>
   </section>
 
 </body>
